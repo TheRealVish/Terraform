@@ -5,5 +5,3 @@ Terraform Scripts and test scripts
         a. AWS Control tower
         b. IAM
         c. SSO
-        
-2. 
