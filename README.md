@@ -1,13 +1,15 @@
 ### Terraform Scripts and test scripts ###
 
-1. Access control automation - resource list
+- Create VPC 
 
-        a. AWS Control tower
-        b. AWS Organization
-        c. IAM
-        d. SSO
-	e. CloudTrail
-	f. CloudWatch
-	g. S3
-	h. SNS
+- Create Subnet 
 
+- Create EC2 
+
+- Create and attach IG 
+
+- Create and attach EIP
+
+- Create security group
+
+- 
