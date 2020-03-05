@@ -3,5 +3,11 @@
 1. Access control automation - resource list
 
         a. AWS Control tower
-        b. IAM
-        c. SSO
+        b. AWS Organization
+        c. IAM
+        d. SSO
+	e. CloudTrail
+	f. CloudWatch
+	g. S3
+	h. SNS
+
