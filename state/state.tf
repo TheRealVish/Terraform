@@ -1,11 +1,10 @@
-variable "destroy" {
+variable "dstrct" {
 }
-
-resource "aws_s3_bucket" "poc_s3_store_state" {
-  bucket = "poc_s3_store_state_88f0n8f"
+resource "aws_s3_bucket" "s3_for_backend" {
+  bucket = "s3-to-store-state-99jnlk"
   versioning {
       enabled = true
   }
-  #non-prod poc destroy flag
-  force_destroy = "${var.destroy}"
+
+  force_destroy = "${var.dstrct}"
 }
