@@ -6,8 +6,6 @@ variable "vpc_id_import" {
 }
 variable "subnet_id_import" {
 }
-
-
 resource "aws_security_group" "sec_group" {
   name = "only_https"
   vpc_id = "${var.vpc_id_import}"
@@ -29,7 +27,9 @@ resource "aws_instance" "testec2" {
     instance_type = "${var.instancetype}"
     subnet_id = "${var.subnet_id_import}"
     vpc_security_group_ids = ["${aws_security_group.sec_group.id}"]
+    depends_on = ["aws_security_group.sec_group"]
 }
 resource "aws_eip" "elastic_ip" {
   instance = "${aws_instance.testec2.id}"
+  depends_on = ["aws_instance.testec2"]
 }
