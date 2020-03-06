@@ -6,10 +6,7 @@ variable "secretKey" {
 }
 variable "Region" {
 }
+variable "new_user" {
+}
 variable "environment" {
 }
-variable "new_user" {
-  
-}
-
-

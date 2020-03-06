@@ -1,7 +1,7 @@
 module "vpcmodule" {
   source = "./vpc"
-  vpcTagValue = "vpcTest"
-  subnetTagValue = "subnetTest"
+  vpcTagValue = "${var.environment}-vpc"
+  subnetTagValue = "${var.environment}-subnet"
 }
 module "ec2module" {
   source = "./ec2"
