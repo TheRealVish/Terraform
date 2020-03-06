@@ -1,4 +1,4 @@
-### Terraform Scripts and test scripts ###
+### Terraform Scripts ###
 
 - Create VPC 
 
