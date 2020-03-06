@@ -25,7 +25,9 @@ resource "aws_internet_gateway" "gate_way" {
 
 output "vpcID" {
   value = "${aws_vpc.testVPC.id}"
+  sensitive = true
 }
 output "subnetID" {
   value = "${aws_subnet.testSubnet.id}"
+  sensitive = true
 }
