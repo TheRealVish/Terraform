@@ -8,4 +8,8 @@ variable "Region" {
 }
 variable "environment" {
 }
+variable "new_user" {
+  
+}
+
 

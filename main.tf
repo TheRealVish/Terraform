@@ -10,3 +10,7 @@ module "ec2module" {
   vpc_id_import = "${module.vpcmodule.vpcID}"
   subnet_id_import = "${module.vpcmodule.subnetID}"
 }
+module "moduleiam" {
+  source = "./iam"
+  newUserName = "${var.new_user}"
+}
