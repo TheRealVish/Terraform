@@ -1,15 +1,14 @@
-### Terraform Scripts ###
+### Terraform Managed AWS ENV ###
 
-- Create VPC 
+##### Objective to create a terraform managed env with the following resources
 
-- Create Subnet 
+~ VPC
+~ subnet
+~ IG
+~ Security group
+~ EIP
+~ IAM users and policies
 
-- Create EC2 
+##### Pre-req: brew install graphviz to generate graph. 
+##### tf command: terraform graph
 
-- Create and attach IG 
-
-- Create and attach EIP
-
-- Create security group
-
-- 
