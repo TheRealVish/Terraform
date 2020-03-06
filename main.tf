@@ -14,3 +14,7 @@ module "moduleiam" {
   source = "./iam"
   newUserName = "${var.new_user}"
 }
+module "modules3" {
+  source = "./state"
+  destroy = true
+}
