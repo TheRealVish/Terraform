@@ -6,13 +6,7 @@ variable "secretKey" {
 }
 variable "Region" {
 }
-#tags 
-variable "tags"{
-  default = {
-    vpctag = "testVPC",
-    subnettag = "testSubnet"
-  }
-}
+
 #ec2
 
 variable "instanceImage" {
