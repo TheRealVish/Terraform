@@ -6,12 +6,3 @@ variable "secretKey" {
 }
 variable "Region" {
 }
-
-#ec2
-
-variable "instanceImage" {
-  default ="ami-0389b2a3c4948b1a0"
-}
-variable "instancetype" {
-  default = "t2.micro"
-}
