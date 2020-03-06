@@ -15,6 +15,16 @@ Terraform Managed AWS ENV
 
 ++ assigns values based on environment
 
+in-progress 
+
+++ create SNS 
+
+++ create cloud trail ?? (api availalbe?)
+
+++ create lambda function
+
+++ attach policies for lambda function
+
 
 GRAPH
 ##### Pre-req: brew install graphviz to generate graph. 

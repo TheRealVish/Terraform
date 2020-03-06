@@ -1,6 +1,5 @@
 variable "newUserName" {
 }
-
 resource "aws_iam_user" "secAdmin" {
   name = "${var.newUserName}"
 }
