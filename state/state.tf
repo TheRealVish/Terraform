@@ -6,5 +6,5 @@ resource "aws_s3_bucket" "s3_for_backend" {
       enabled = true
   }
 
-  force_destroy = "${var.dstrct}"
+  force_destroy = var.dstrct
 }

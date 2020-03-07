@@ -23,6 +23,7 @@ Terraform Managed AWS ENV
 
 ++ attach iam policy to publish to sns
 
+++ adopted for v0.12
 
 in-progress 
 

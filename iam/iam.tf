@@ -1,7 +1,7 @@
 variable "newUserName" {
 }
 resource "aws_iam_user" "secAdmin" {
-  name = "${var.newUserName}"
+  name = var.newUserName
 }
 resource "aws_iam_policy" "ec2policy" {
   name = "secAdminPolicy"
@@ -40,6 +40,6 @@ resource "aws_iam_policy" "ec2policy" {
 }
 resource "aws_iam_policy_attachment" "policyBind" {
   name = "policybind"
-  users = ["${aws_iam_user.secAdmin.name}"]
-  policy_arn = "${aws_iam_policy.ec2policy.arn}"
+  users = [aws_iam_user.secAdmin.name]
+  policy_arn = aws_iam_policy.ec2policy.arn
 }

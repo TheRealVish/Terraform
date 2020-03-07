@@ -12,6 +12,6 @@ resource "aws_cloudwatch_event_rule" "cw_rule_ec2_events" {
   PATTERN
 }
 output "cw_event_rule_id" {
-  value = "${aws_cloudwatch_event_rule.cw_rule_ec2_events.id}"
+  value = aws_cloudwatch_event_rule.cw_rule_ec2_events.id
   sensitive = true
 }
