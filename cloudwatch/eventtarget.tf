@@ -1,5 +1,3 @@
-variable "event_rule_id" {
-}
 variable "event_sns_arn" {
 }
 resource "aws_cloudwatch_event_target" "cw_event_target_ec2" {
