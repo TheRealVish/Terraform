@@ -22,3 +22,7 @@ module "modulesns" {
   source = "./sns"
   snstag = "${var.environment}-sns"
 }
+module "modulecloudwatch" {
+  source = "./cloudwatch"
+  event_sns_arn = "${module.modulesns.ec2_event_sns_arn}"
+}

@@ -18,8 +18,10 @@ resource "aws_sns_topic" "publish_user_events" {
   }
 }
   EOF
-
 tags ={
     name = "${var.snstag}"
 }
+}
+output "ec2_event_sns_arn" {
+  value = "${aws_sns_topic.publish_user_events.arn}"
 }
