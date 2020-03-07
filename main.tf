@@ -18,3 +18,7 @@ module "modulestate" {
   source = "./state"
   dstrct = true
 }
+module "modulesns" {
+  source = "./sns"
+  snstag = "${var.environment}-sns"
+}

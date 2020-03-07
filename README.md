@@ -15,9 +15,13 @@ Terraform Managed AWS ENV
 
 ++ assigns values based on environment
 
-in-progress 
+++ Stores state in s3 along with version
 
 ++ create SNS 
+
+
+in-progress 
+
 
 ++ create cloud trail ?? (api availalbe?)
 
@@ -30,3 +34,8 @@ GRAPH
 ##### Pre-req: brew install graphviz to generate graph. 
 ##### tf command: terraform graph
 
+TIPS
+##### use terraform apply --auto-approve to skip approve step
+##### always terraform init to install a new module 
+##### keep the folder structure clean with separate modules for group of resources
+##### keep secrets in .tfvars and include in .gitignore
