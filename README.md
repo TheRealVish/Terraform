@@ -7,7 +7,7 @@ Terraform Managed AWS ENV
 
 ++ IG
 
-++ Security group
+++ security group
 
 ++ EIP
 
@@ -15,15 +15,16 @@ Terraform Managed AWS ENV
 
 ++ assigns values based on environment
 
-++ Stores state in s3 along with version
+++ stores state in s3 along with version
 
 ++ create SNS 
 
+++ create cloudwatch event rule for EC2, any state change on ec2 will be captured and published to SNS
+
+++ attach iam policy to publish to sns
+
 
 in-progress 
-
-
-++ create cloud trail ?? (api availalbe?)
 
 ++ create lambda function
 
@@ -31,11 +32,14 @@ in-progress
 
 
 GRAPH
+
 ##### Pre-req: brew install graphviz to generate graph. 
 ##### tf command: terraform graph
 
 TIPS
+
 ##### use terraform apply --auto-approve to skip approve step
 ##### always terraform init to install a new module 
 ##### keep the folder structure clean with separate modules for group of resources
 ##### keep secrets in .tfvars and include in .gitignore
+##### replicate the steps on console to get accurate policy JSON
