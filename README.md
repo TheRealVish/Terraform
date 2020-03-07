@@ -26,9 +26,11 @@ Terraform Managed AWS ENV
 
 in-progress 
 
-++ create lambda function
+++ create Node.JS lambda function to publish on slack webhook
 
 ++ attach policies for lambda function
+
+++ update SNS policies to trigger lambda 
 
 
 GRAPH
