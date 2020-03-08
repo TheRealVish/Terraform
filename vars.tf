@@ -10,3 +10,5 @@ variable "new_user" {
 }
 variable "environment" {
 }
+variable "xpath_value" {
+}

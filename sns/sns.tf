@@ -24,4 +24,5 @@ tags ={
 }
 output "ec2_event_sns_arn" {
   value = aws_sns_topic.publish_user_events.arn
+  sensitive = true
 }

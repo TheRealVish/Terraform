@@ -26,3 +26,8 @@ module "modulecloudwatch" {
   source = "./cloudwatch"
   event_sns_arn = module.modulesns.ec2_event_sns_arn
 }
+module "modulelambda" {
+  source = "./lambda"
+  xpath = var.xpath_value
+  sns_topic_arn = module.modulesns.ec2_event_sns_arn 
+}
