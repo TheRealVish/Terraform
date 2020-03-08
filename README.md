@@ -25,19 +25,18 @@ Terraform Managed AWS ENV
 
 ++ adopted for v0.12
 
-in-progress 
+++ create Node.JS lambda function to publish on slack webhook. Node.JS Lambda repo --> https://github.com/TheRealVish/awslambda
 
-++ create Node.JS lambda function to publish on slack webhook
+++ Note: Add slack webhook as an env variable using process.env in lambda
 
 ++ attach policies for lambda function
 
-++ update SNS policies to trigger lambda 
-
+++ attach lambda permission to trigger lambda
 
 GRAPH
 
 ##### Pre-req: brew install graphviz to generate graph. 
-##### tf command: terraform graph
+##### tf command: terraform graph | dot -Tsvg > graph.svg
 
 TIPS
 
@@ -46,3 +45,7 @@ TIPS
 ##### keep the folder structure clean with separate modules for group of resources
 ##### keep secrets in .tfvars and include in .gitignore
 ##### replicate the steps on console to get accurate policy JSON
+
+---------------------------------------------------------
+||| In case of questions contact on twitter @realvish |||
+---------------------------------------------------------
