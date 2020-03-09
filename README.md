@@ -46,6 +46,5 @@ TIPS
 ##### keep secrets in .tfvars and include in .gitignore
 ##### replicate the steps on console to get accurate policy JSON
 
----------------------------------------------------------
-||| In case of questions contact on twitter @realvish |||
----------------------------------------------------------
+
+@realvish
