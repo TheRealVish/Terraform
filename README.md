@@ -1,5 +1,8 @@
+:speech_balloon:
+```
 Terraform Managed AWS ENV
-##### Objective to create a terraform managed env with the following resources
+
+Objective to create a terraform managed env with the following resources
 
 ++ VPC
 
