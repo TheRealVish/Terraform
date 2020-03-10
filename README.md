@@ -25,7 +25,7 @@ Terraform Managed AWS ENV
 
 ++ adopted for v0.12
 
-++ create Node.JS lambda function to publish on slack webhook. Node.JS Lambda repo --> https://github.com/TheRealVish/awslambda
+++ create Node.JS lambda function to publish on slack webhook. Node.JS Lambda repo --> git@github.com:TheRealVish/Lambda-Slack.git
 
 ++ Note: Add slack webhook as an env variable using process.env in lambda
 
